@@ -44,8 +44,28 @@
     </button>
 </div>
 
+<div style="text-align: center; margin: 20px;">
+    <select id="filtroGenero" onchange="filtrarPeliculas()" style="padding: 10px; width: 220px;">
+        <option value="todos">Todos los géneros</option>
+        <option value="accion">Acción</option>
+        <option value="animacion">Animación</option>
+        <option value="aventura">Aventura</option>
+        <option value="comedia">Comedia</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="romance">Romance</option>
+        <option value="suspenso">Suspenso</option>
+        <option value="crimen">Crimen</option>
+        <option value="asiatico">Asiatico</option>
+        <option value="thriller">Thriller</option>
+        <option value="gore">Gore</option>
+        <option value="fantasia">Fantasia</option>
+        <option value="ciencia-ficcion">Ciencia ficción</option>
+    </select>
+</div>
+
 <br>
-    <div class="pelicula">
+    <div class="pelicula" data-genero="accion asiatico horror gore">
 
     <div class="contenido">
         <h2>Battle Royale (2000)</h2>
@@ -69,7 +89,7 @@
 <br>
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="comedia">
     <div class="contenido">
         <h2>Dr. Strangelove (1964)</h2>
     </div>
@@ -91,7 +111,7 @@
 </div>
 
 <br>
- <div class="pelicula">
+ <div class="pelicula" data-genero="thriller horror">
     <div class="contenido">
         <h2>Night of the Living Dead (1968)</h2>
     </div>
@@ -114,7 +134,7 @@
 <br>
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="asiatico horror gore">
     <div class="contenido">
         <h2>Orozco el Embalsamador (2001)</h2>
     </div>
@@ -138,7 +158,7 @@
 <br>
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="accion asiatico thriller crimen">
     <div class="contenido">
         <h2>Infernal Affairs (2002)</h2>
     </div>
@@ -162,7 +182,7 @@
 <br>
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="ciencia-ficcion romance suspenso">
     <div class="contenido">
         <h2>La Jetée (1962)</h2>
     </div>
@@ -186,7 +206,7 @@
 <br>
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="accion asiatico horror gore">
     <div class="contenido">
         <h2>Ichi The Killer (2001)</h2>
     </div>
@@ -211,7 +231,7 @@
 
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="drama crimen">
     <div class="contenido">
         <h2>Los olvidados (1950)</h2>
     </div>
@@ -236,7 +256,7 @@
 
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="ciencia-ficcion romance suspenso drama">
     <div class="contenido">
         <h2>El Año Pasado en Marienbad (1961)</h2>
     </div>
@@ -261,7 +281,7 @@
 
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="crimen drama">
     <div class="contenido">
         <h2>La Haine (1995)</h2>
     </div>
@@ -286,7 +306,7 @@
 
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="accion comedia crimen">
     <div class="contenido">
         <h2>Llámenme Mike (1979)</h2>
     </div>
@@ -310,7 +330,7 @@
 
 <br>
 
-  <div class="pelicula">
+  <div class="pelicula" data-genero="horror suspenso">
     <div class="contenido">
         <h2>Hasta el Viento Tiene Miedo (1968)</h2>
     </div>
@@ -330,10 +350,9 @@
 </video>
 </div>
 
-<br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="romance suspenso drama">
     <div class="contenido">
         <h2>Death Takes a Holiday (1934)</h2>
     </div>
@@ -353,11 +372,10 @@
     </div>
 </div> 
 </div>
-    
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="comedia drama">
     <div class="contenido">
         <h2>Los Que Se Quedan (The Holdovers) (2023)</h2>
     </div>
@@ -380,7 +398,7 @@
 <br>
    
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="animacion comedia aventura">
     <div class="contenido">
         <h2>Fantastic Mr. Fox (2009)</h2>
     </div>
@@ -403,7 +421,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="suspenso drama crimen thriller">
     <div class="contenido">
         <h2>The Night of the Hunter (1955)</h2>
     </div>
@@ -426,7 +444,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="aventura comedia romance">
     <div class="contenido">
         <h2>La vida secreta de Walter Mitty (2013)</h2>
     </div>
@@ -449,7 +467,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="comedia romance drama">
     <div class="contenido">
         <h2>Punch-Drunk Love (2002)</h2>
     </div>
@@ -472,7 +490,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="accion comedia crimen">
     <div class="contenido">
         <h2>Snatch: Cerdos y Diamantes (2000)</h2>
     </div>
@@ -482,7 +500,7 @@
 <div style="position: relative; width: 100%; max-width: 916px; margin: 20px auto;">
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
         <iframe
-            src="https:////ok.ru/videoembed/6915922070270?nochat=1"
+            src="https://ok.ru/videoembed/6915922070270?nochat=1"
             title="Snatch: Cerdos y Diamantes (2000)"
             frameborder="0"
             allow="autoplay; fullscreen"
@@ -495,7 +513,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="comedia aventura crimen">
     <div class="contenido">
         <h2>After Hours (1985)</h2>
     </div>
@@ -518,7 +536,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="thriller crimen suspenso asiatico">
     <div class="contenido">
         <h2>Memories Of Murder (2003)</h2>
     </div>
@@ -541,7 +559,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="animacion aventura suspenso fantasia">
     <div class="contenido">
         <h2>Coraline (2009)</h2>
     </div>
@@ -564,7 +582,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="animacion romance comedia fantasia">
     <div class="contenido">
         <h2>El Cadáver de la Novia (2005)</h2>
     </div>
@@ -587,7 +605,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="comedia romance drama">
     <div class="contenido">
         <h2>Y Tu Mamá También (2001)</h2>
     </div>
@@ -610,7 +628,7 @@
 <br>
 
 <br>
-  <div class="pelicula">
+  <div class="pelicula" data-genero="thriller asiatico horror">
     <div class="contenido">
         <h2> Parásitos (Parasite) (2019)</h2>
     </div>
@@ -632,6 +650,222 @@
 </div>
 <br>
 
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>El Increíble Castillo Vagabundo (2004)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhBN3dQmDu-huviPKrhtVOBH0IWwI7o_5o1ZOnO82jVvdDYBy7kC5Lg_1&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Después de que una bruja la transforma en una anciana, una fabricante de sombreros busca refugio en la casa ambulante de un mago muy peculiar.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn711206.ca.archive.org/0/items/el-increible-castillo-vagabundo_202504/El%20incre%C3%ADble%20castillo%20vagabundo.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>El Viaje de Chihiro (2001)</h2>
+    </div>
+<img src="https://m.media-amazon.com/images/M/MV5BM2E2YzcwMTQtNWRlMC00ZGZlLWJhZTEtMDU4ZGIzMWI0NzJmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Chihiro es una niña caprichosa que debe adentrarse en un mundo de fantasía para poder salvar a sus padres, convertidos en cerdos.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn711206.ca.archive.org/0/items/el-increible-castillo-vagabundo_202504/El%20viaje%20de%20Chihiro.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>Mi vecino Totoro (1988)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2wCLOcVmwpvNiO-1FFOxSkXgHoztNfNaKTR7W6-rXG9ykx1wIf9-nuU6&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Cuando dos jóvenes chicas se mudan al campo para estar cerca de su madre enferma, tienen aventuras con los maravillosos espíritus del bosque que viven cerca.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn711206.ca.archive.org/0/items/el-increible-castillo-vagabundo_202504/Mi%20vecino%20totoro.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>Ponyo (2008)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQ_-702WHi9YcPRYPn3ejsNN9zjjSeEOHvwJulpCHTQ&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Un niño de cinco años desarrolla una relación con Ponyo, una princesa de las profundidades marinas que desea convertirse en humana tras enamorarse de él.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn711206.ca.archive.org/0/items/el-increible-castillo-vagabundo_202504/Ponyo.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>La princesa Mononoke (1997)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdD1dQflfo_ek-HACI5GUk_JZdV_q9k9wgmDS5MQitVg&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Un príncipe se ve involucrado en un conflicto entre una princesa del bosque y el abuso de la mecanización.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn711206.ca.archive.org/0/items/el-increible-castillo-vagabundo_202504/La%20princesa%20Mononoke.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>Kiki: Entregas a Domicilio (1989)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIhyUUz6xNE-srFRvuJLpU7cZKZ6rSMYc8tiDe360yWA&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Al cumplir los 13 años, la brujita Kiki debe, como manda la tradición, abandonar su casa y, así, llega a una ciudad donde un panadero la contrata para repartir el pan con su escoba. Un día, Kiki descubre que ya no puede hacer levitar su escoba.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://ia902805.us.archive.org/20/items/ver-kiki-entregas-a-domicilio-online-gratis-hd-cinecalidad/Ver_Kiki__Entregas_a_Domicilio_Online_Gratis_HD_-_Cinecalidad.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>La Colina de las Amapolas (2011)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyD4dQSbLmem1Mqo6Uhi0C3YVr4QBT94hz962QdetsozNTEzfCjtHfN4LV&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Unos adolescentes de Yokohama intentan evitar que la casa club de su escuela sea demolida.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://ia903105.us.archive.org/14/items/kikis-delivery-service_20260408/La%20colina%20de%20las%20amapolas.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>La Tumba de las Luciérnagas (1988)</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZSGIF5be6_K6koRGIBl9fT3ZYm9JwGCg-Io83PyBXA&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Un adolescente se ve obligado a cuidar a su hermana menor después de que un bombardeo aliado durante la Segunda Guerra Mundial destruye su casa.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn720307.ca.archive.org/0/items/www.codigosvictor.webs.com/La%20tumba%20de%20las%20luci%C3%A9rnagas%20%281988%29%20%28codigosvictor%29.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
+<br>
+
+  <div class="pelicula" data-genero="animacion fanstasia aventura">
+    <div class="contenido">
+        <h2>El Niño y la Garza ()</h2>
+    </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZSGIF5be6_K6koRGIBl9fT3ZYm9JwGCg-Io83PyBXA&s=10" width="300" height="500" style="display: block; margin: auto;">
+<br>
+<p>Un adolescente se ve obligado a cuidar a su hermana menor después de que un bombardeo aliado durante la Segunda Guerra Mundial destruye su casa.</p>
+<video
+    width="916"
+    height="516"
+    controls
+    preload="metadata">
+    
+    <source
+        src="https://dn720307.ca.archive.org/0/items/www.codigosvictor.webs.com/La%20tumba%20de%20las%20luci%C3%A9rnagas%20%281988%29%20%28codigosvictor%29.mp4"
+        type="video/mp4">
+
+</video>
+</div>
+
+<br>
+
 <script>
 function buscarPelicula() {
 
@@ -651,6 +885,35 @@ function buscarPelicula() {
 
     });
 }
+
+
+function filtrarPeliculas() {
+
+    let genero = document.getElementById("filtroGenero").value;
+    let texto = document.getElementById("buscador").value.toLowerCase();
+
+    let peliculas = document.querySelectorAll(".pelicula");
+
+    peliculas.forEach(function(pelicula) {
+
+        let nombre = pelicula.querySelector("h2").textContent.toLowerCase();
+        let generos = pelicula.getAttribute("data-genero") || "";
+
+        let coincideGenero =
+            genero === "todos" || generos.includes(genero);
+
+        let coincideNombre =
+            nombre.includes(texto);
+
+        if (coincideGenero && coincideNombre) {
+            pelicula.style.display = "block";
+        } else {
+            pelicula.style.display = "none";
+        }
+
+    });
+}
+
 </script>
 
 </body>
